@@ -90,6 +90,7 @@ nav {
     margin-bottom: 115px;
 
 
+
 }
 
 .plant-section-text p {
@@ -133,7 +134,7 @@ nav {
 }
 
 .plant-img img {
-    width: 255px;
+    width: 100%;
 }
 
 .plant-text h4 {
@@ -157,8 +158,8 @@ nav {
 }
 
 .img-flower {
-    width: 540px;
-    height: 550px;
+    width: 100%;
+    height: 570px;
 }
 
 
@@ -167,8 +168,22 @@ nav {
     width: 50%;
     margin-left: 390px;
     margin-top: -700px;
+    animation: spin 6s linear infinite;
 
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 .badge {
     width: 100%;
@@ -179,13 +194,127 @@ nav {
 
     font-weight: 700;
     font-size: 3rem;
+    max-width: 400px;
 }
 
 .flower-lover-text li {
     font-weight: 500;
     font-size: 1.2rem;
     color: #8987A1;
+    margin-bottom: 40px;
 }
+
+/* Deals */
+
+.latest-deal {
+    padding: 30px;
+    background: #f9f9f9;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.deal-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.deal-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.deal-card {
+    position: relative;
+    border-radius: 12px;
+
+
+
+
+
+}
+
+
+
+.deal-card img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 12px;
+
+}
+
+
+.small {
+    width: 367px;
+    height: 201px;
+
+}
+
+
+.large {
+    flex: 1;
+    min-width: 300px;
+    height: 417px;
+
+}
+
+
+.deal-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 52px 0;
+    border-radius: 12px;
+    background-color: black;
+    opacity: 0.7;
+
+
+
+}
+
+.deal-text-l {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 160px 0;
+    background-color: black;
+    border-radius: 12px;
+    opacity: 0.7;
+
+}
+
+.deal-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.deal-text a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.deal-text-l a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 
 /* mobile device */
@@ -216,9 +345,10 @@ nav {
 
     /* plant section */
 
+
     .carts {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 10px;
     }
 
     .plant-section-text p {
@@ -227,13 +357,29 @@ nav {
 
     /* plant-lover */
     .flower-lover {
-
+        margin-top: 0;
         grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
 
-    .flower-lover-text {
+    .badge-main {
 
-        margin-top: 400px;
+        display: none;
+
     }
 
+    .flower-lover-text h2 {
+        font-size: 2rem;
+    }
+
+    /* deals */
+    .large {
+
+        height: 201px;
+        margin-right: 40px;
+    }
+
+    .deal-text-l {
+        padding: 52px 0;
+    }
 }
