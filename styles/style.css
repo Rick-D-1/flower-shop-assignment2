@@ -208,7 +208,7 @@ nav {
 
 .latest-deal {
     padding: 30px;
-    background: #f9f9f9;
+
     max-width: 1140px;
     margin: 0 auto;
     margin-bottom: 125px;
@@ -479,6 +479,10 @@ html {
         min-width: 367px;
         height: 201px;
 
+    }
+
+    .deal-container {
+        justify-content: center;
     }
 
     .deal-text-l {
